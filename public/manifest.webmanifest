@@ -1,0 +1,13 @@
+{
+  "name": "Java بالعربي",
+  "short_name": "Java بالعربي",
+  "description": "تعلّم Java من الصفر حتى الاحتراف",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050805",
+  "theme_color": "#050805",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
