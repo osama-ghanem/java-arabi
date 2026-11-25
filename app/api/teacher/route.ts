@@ -35,7 +35,7 @@ export async function POST(req: Request) {
     if (used >= DAILY_LIMIT) {
       return NextResponse.json({ error: `وصلت للحد اليومي (${DAILY_LIMIT} سؤالًا). ارجع غدًا وكمّل 💪` }, { status: 429 });
     }
-    await db.from("ai_usage").upsert({ user_id: userId, day: today, count: used + 1 });
+         await db.from("ai_usage").upsert({ user_id: userId, day: today, count: used + 1 } as any);
   }
 
   const messages = (body.messages ?? [])
